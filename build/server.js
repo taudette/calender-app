@@ -5641,6 +5641,12 @@ module.exports =
   buf.push("<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">");
   jade_debug.shift();
   jade_debug.unshift(new jade.DebugItem( 10, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  buf.push("<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css\" rel=\"stylesheet\">");
+  jade_debug.shift();
+  jade_debug.unshift(new jade.DebugItem( 11, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  buf.push("<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css\" rel=\"stylesheet\">");
+  jade_debug.shift();
+  jade_debug.unshift(new jade.DebugItem( 12, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<style id=\"css\">" + (null == (jade_interp = css) ? "" : jade_interp));
   jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
   jade_debug.shift();
@@ -5649,39 +5655,39 @@ module.exports =
   jade_debug.shift();
   buf.push("</head>");
   jade_debug.shift();
-  jade_debug.unshift(new jade.DebugItem( 11, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 13, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<body>");
   jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
-  jade_debug.unshift(new jade.DebugItem( 12, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 14, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<div id=\"app\">" + (null == (jade_interp = body) ? "" : jade_interp));
   jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
   jade_debug.shift();
   buf.push("</div>");
   jade_debug.shift();
-  jade_debug.unshift(new jade.DebugItem( 13, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 15, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<script" + (jade.attr("src", entry, true, true)) + ">");
   jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
   jade_debug.shift();
   buf.push("</script>");
   jade_debug.shift();
-  jade_debug.unshift(new jade.DebugItem( 14, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 16, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<script>");
-  jade_debug.unshift(new jade.DebugItem( 16, jade_debug[0].filename ));
-  jade_debug.unshift(new jade.DebugItem( 16, jade_debug[0].filename ));
+  jade_debug.unshift(new jade.DebugItem( 18, jade_debug[0].filename ));
+  jade_debug.unshift(new jade.DebugItem( 18, jade_debug[0].filename ));
   buf.push("window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;");
   jade_debug.shift();
   buf.push("\n");
-  jade_debug.unshift(new jade.DebugItem( 16, jade_debug[0].filename ));
+  jade_debug.unshift(new jade.DebugItem( 18, jade_debug[0].filename ));
   buf.push("ga('create','" + (jade.escape((jade_interp = trackingId) == null ? '' : jade_interp)) + "','auto');ga('send','pageview')");
   jade_debug.shift();
   jade_debug.shift();
   buf.push("</script>");
   jade_debug.shift();
-  jade_debug.unshift(new jade.DebugItem( 17, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 19, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   if ( trackingId)
   {
-  jade_debug.unshift(new jade.DebugItem( 18, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
-  jade_debug.unshift(new jade.DebugItem( 18, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 20, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
+  jade_debug.unshift(new jade.DebugItem( 20, "/Users/Tyler/projects/van-test/src/views/index.jade" ));
   buf.push("<script src=\"https://www.google-analytics.com/analytics.js\" async defer>");
   jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
   jade_debug.shift();
@@ -5698,7 +5704,7 @@ module.exports =
   jade_debug.shift();
   jade_debug.shift();}.call(this,"body" in locals_for_with?locals_for_with.body:typeof body!=="undefined"?body:undefined,"css" in locals_for_with?locals_for_with.css:typeof css!=="undefined"?css:undefined,"description" in locals_for_with?locals_for_with.description:typeof description!=="undefined"?description:undefined,"entry" in locals_for_with?locals_for_with.entry:typeof entry!=="undefined"?entry:undefined,"title" in locals_for_with?locals_for_with.title:typeof title!=="undefined"?title:undefined,"trackingId" in locals_for_with?locals_for_with.trackingId:typeof trackingId!=="undefined"?trackingId:undefined));;return buf.join("");
   } catch (err) {
-    jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "doctype html\nhtml(class=\"no-js\", lang=\"\")\n  head\n    meta(charset=\"utf-8\")\n    meta(http-equiv=\"x-ua-compatible\", content=\"ie=edge\")\n    title= title\n    meta(name=\"description\", description=description)\n    meta(name=\"viewport\", content=\"width=device-width, initial-scale=1\")\n    link(rel=\"apple-touch-icon\", href=\"apple-touch-icon.png\")\n    style#css!= css\n  body\n    #app!= body\n    script(src=entry)\n    script.\n      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;\n      ga('create','#{trackingId}','auto');ga('send','pageview')\n    if trackingId\n      script(src=\"https://www.google-analytics.com/analytics.js\", async=true, defer=true)\n");
+    jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "doctype html\nhtml(class=\"no-js\", lang=\"\")\n  head\n    meta(charset=\"utf-8\")\n    meta(http-equiv=\"x-ua-compatible\", content=\"ie=edge\")\n    title= title\n    meta(name=\"description\", description=description)\n    meta(name=\"viewport\", content=\"width=device-width, initial-scale=1\")\n    link(rel=\"apple-touch-icon\", href=\"apple-touch-icon.png\")\n    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css', rel='stylesheet')\n    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css', rel='stylesheet')\n    style#css!= css\n  body\n    #app!= body\n    script(src=entry)\n    script.\n      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;\n      ga('create','#{trackingId}','auto');ga('send','pageview')\n    if trackingId\n      script(src=\"https://www.google-analytics.com/analytics.js\", async=true, defer=true)\n\n\n\n");
   }
   }
 

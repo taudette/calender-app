@@ -7,6 +7,8 @@ html(class="no-js", lang="")
     meta(name="description", description=description)
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon", href="apple-touch-icon.png")
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css', rel='stylesheet')
     style#css!= css
   body
     #app!= body
@@ -16,3 +18,6 @@ html(class="no-js", lang="")
       ga('create','#{trackingId}','auto');ga('send','pageview')
     if trackingId
       script(src="https://www.google-analytics.com/analytics.js", async=true, defer=true)
+
+
+
