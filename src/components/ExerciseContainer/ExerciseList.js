@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Exercise.scss';
 import Exercise from './Exercise';
 
-function ExerciseList(){
-	return(
-		<div className="exerciseList">
-			I am an exercise exercise list
-			<Exercise category="strength"> This is a strength exercise </Exercise>
-			<Exercise category="power"> This is a power exercise </Exercise>
-		</div>
-	);
-}
+class ExerciseList extends Component {
+
+  render() {
+
+    const exerciseNodes = this.props.data.map((exercise) => {
+      return <Exercise category={exercise.category} key={exercise.id} text={exercise.text} >
+      	{exercise.text}
+      	</Exercise>
+    });
+
+    return (
+      <div className="exerciseList">
+     	{exerciseNodes}
+      </div>
+    );
+  }
+};
 
 export default withStyles(ExerciseList, s);
+

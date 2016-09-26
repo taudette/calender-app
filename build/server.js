@@ -48,11 +48,11 @@ module.exports =
 
   'use strict';
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -515,43 +515,43 @@ module.exports =
 /* 5 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/helpers/asyncToGenerator");
+  module.exports = require("babel-runtime/core-js/object/get-prototype-of");
 
 /***/ },
 /* 6 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/regenerator");
+  module.exports = require("babel-runtime/helpers/asyncToGenerator");
 
 /***/ },
 /* 7 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/core-js/object/get-prototype-of");
+  module.exports = require("babel-runtime/helpers/classCallCheck");
 
 /***/ },
 /* 8 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/helpers/classCallCheck");
+  module.exports = require("babel-runtime/helpers/createClass");
 
 /***/ },
 /* 9 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/helpers/createClass");
+  module.exports = require("babel-runtime/helpers/inherits");
 
 /***/ },
 /* 10 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/helpers/inherits");
+  module.exports = require("babel-runtime/helpers/possibleConstructorReturn");
 
 /***/ },
 /* 11 */
 /***/ function(module, exports) {
 
-  module.exports = require("babel-runtime/helpers/possibleConstructorReturn");
+  module.exports = require("babel-runtime/regenerator");
 
 /***/ },
 /* 12 */
@@ -667,23 +667,23 @@ module.exports =
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1653,23 +1653,23 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1702,6 +1702,15 @@ module.exports =
   var _ExerciseContainer2 = _interopRequireDefault(_ExerciseContainer);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var data = [{ id: 1, category: "Power", text: "this is a power exercise" }, { id: 2, category: "Strength", text: "this is a strength exercise" }]; /**
+                                                                                                                                                      * React Starter Kit (https://www.reactstarterkit.com/)
+                                                                                                                                                      *
+                                                                                                                                                      * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                                                                                                                      *
+                                                                                                                                                      * This source code is licensed under the MIT license found in the
+                                                                                                                                                      * LICENSE.txt file in the root directory of this source tree.
+                                                                                                                                                      */
   
   var App = function (_Component) {
     (0, _inherits3.default)(App, _Component);
@@ -1741,7 +1750,7 @@ module.exports =
           'div',
           null,
           _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(_ExerciseContainer2.default, null),
+          _react2.default.createElement(_ExerciseContainer2.default, { data: data }),
           this.props.children,
           _react2.default.createElement(_Feedback2.default, null),
           _react2.default.createElement(_Footer2.default, null)
@@ -1749,14 +1758,7 @@ module.exports =
       }
     }]);
     return App;
-  }(_react.Component); /**
-                        * React Starter Kit (https://www.reactstarterkit.com/)
-                        *
-                        * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                        *
-                        * This source code is licensed under the MIT license found in the
-                        * LICENSE.txt file in the root directory of this source tree.
-                        */
+  }(_react.Component);
   
   App.propTypes = {
     context: _react.PropTypes.shape({
@@ -1786,23 +1788,23 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1882,23 +1884,23 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1976,23 +1978,23 @@ module.exports =
   	value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -2029,7 +2031,11 @@ module.exports =
   					{ className: 'category' },
   					this.props.category
   				),
-  				this.props.children
+  				_react2.default.createElement(
+  					'p',
+  					null,
+  					this.props.text
+  				)
   			);
   		}
   	}]);
@@ -2048,23 +2054,23 @@ module.exports =
   	value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -2088,20 +2094,7 @@ module.exports =
   
   var _ExerciseForm2 = _interopRequireDefault(_ExerciseForm);
   
-  var _exercises = __webpack_require__(132);
-  
-  var _exercises2 = _interopRequireDefault(_exercises);
-  
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
   
   var ExerciseContainer = function (_Component) {
   	(0, _inherits3.default)(ExerciseContainer, _Component);
@@ -2114,6 +2107,7 @@ module.exports =
   	(0, _createClass3.default)(ExerciseContainer, [{
   		key: 'render',
   		value: function render() {
+  			console.log(this.props.data);
   			return _react2.default.createElement(
   				'div',
   				{ className: _Exercise2.default.container },
@@ -2122,13 +2116,20 @@ module.exports =
   					null,
   					'Exercises'
   				),
-  				_react2.default.createElement(_ExerciseList2.default, { data: _exercises2.default }),
+  				_react2.default.createElement(_ExerciseList2.default, { data: this.props.data }),
   				_react2.default.createElement(_ExerciseForm2.default, null)
   			);
   		}
   	}]);
   	return ExerciseContainer;
-  }(_react.Component);
+  }(_react.Component); /**
+                        * React Starter Kit (https://www.reactstarterkit.com/)
+                        *
+                        * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                        *
+                        * This source code is licensed under the MIT license found in the
+                        * LICENSE.txt file in the root directory of this source tree.
+                        */
   
   exports.default = (0, _withStyles2.default)(ExerciseContainer, _Exercise2.default);
 
@@ -2173,8 +2174,28 @@ module.exports =
   'use strict';
   
   Object.defineProperty(exports, "__esModule", {
-  	value: true
+    value: true
   });
+  
+  var _getPrototypeOf = __webpack_require__(5);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(7);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(8);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(10);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(9);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
   
   var _react = __webpack_require__(1);
   
@@ -2194,23 +2215,37 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  function ExerciseList() {
-  	return _react2.default.createElement(
-  		'div',
-  		{ className: 'exerciseList' },
-  		'I am an exercise exercise list',
-  		_react2.default.createElement(
-  			_Exercise4.default,
-  			{ category: 'strength' },
-  			' This is a strength exercise '
-  		),
-  		_react2.default.createElement(
-  			_Exercise4.default,
-  			{ category: 'power' },
-  			' This is a power exercise '
-  		)
-  	);
-  }
+  var ExerciseList = function (_Component) {
+    (0, _inherits3.default)(ExerciseList, _Component);
+  
+    function ExerciseList() {
+      (0, _classCallCheck3.default)(this, ExerciseList);
+      return (0, _possibleConstructorReturn3.default)(this, (ExerciseList.__proto__ || (0, _getPrototypeOf2.default)(ExerciseList)).apply(this, arguments));
+    }
+  
+    (0, _createClass3.default)(ExerciseList, [{
+      key: 'render',
+      value: function render() {
+  
+        var exerciseNodes = this.props.data.map(function (exercise) {
+          return _react2.default.createElement(
+            _Exercise4.default,
+            { category: exercise.category, key: exercise.id, text: exercise.text },
+            exercise.text
+          );
+        });
+  
+        return _react2.default.createElement(
+          'div',
+          { className: 'exerciseList' },
+          exerciseNodes
+        );
+      }
+    }]);
+    return ExerciseList;
+  }(_react.Component);
+  
+  ;
   
   exports.default = (0, _withStyles2.default)(ExerciseList, _Exercise2.default);
 
@@ -2535,23 +2570,23 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(7);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(8);
+  var _classCallCheck2 = __webpack_require__(7);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(9);
+  var _createClass2 = __webpack_require__(8);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(11);
+  var _possibleConstructorReturn2 = __webpack_require__(10);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(10);
+  var _inherits2 = __webpack_require__(9);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -2774,11 +2809,11 @@ module.exports =
     value: true
   });
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -2978,11 +3013,11 @@ module.exports =
   
   var _getIterator3 = _interopRequireDefault(_getIterator2);
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -3517,11 +3552,11 @@ module.exports =
     value: true
   });
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -3719,11 +3754,11 @@ module.exports =
   });
   exports.action = exports.path = undefined;
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -3861,11 +3896,11 @@ module.exports =
   });
   exports.action = exports.path = undefined;
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -3997,11 +4032,11 @@ module.exports =
   });
   exports.action = exports.path = undefined;
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -4119,11 +4154,11 @@ module.exports =
   });
   exports.action = exports.path = undefined;
   
-  var _regenerator = __webpack_require__(6);
+  var _regenerator = __webpack_require__(11);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _asyncToGenerator2 = __webpack_require__(5);
+  var _asyncToGenerator2 = __webpack_require__(6);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -6674,14 +6709,6 @@ module.exports =
 /***/ function(module, exports) {
 
   module.exports = require("react-dom/server");
-
-/***/ },
-/* 132 */
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  var data = [{ id: 1, category: "Power", text: "this is a power exercise" }, { id: 2, category: "Strength", text: "this is a strength exercise" }];
 
 /***/ }
 /******/ ]);

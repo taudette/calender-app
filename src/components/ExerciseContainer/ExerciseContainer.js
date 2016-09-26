@@ -12,14 +12,14 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Exercise.scss';
 import ExerciseList from './ExerciseList';
 import ExerciseForm from './ExerciseForm';
-import data from '../../data/queries/exercises'
 
 class ExerciseContainer extends Component{
 	render() {
+		console.log(this.props.data)
 		return (
 	    <div className={s.container}>
 	     	<h1>Exercises</h1>
-	     	<ExerciseList data={data} />
+	     	<ExerciseList data={this.props.data} />
 	     	<ExerciseForm />
 	    </div>
 	  );

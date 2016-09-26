@@ -7,13 +7,12 @@ class Exercise extends Component {
   render() {
     return (
 		<div className="exercise">
-			<h2 className="category">
-				{this.props.category}
-			</h2>
-			{this.props.children}
+			<h2 className="category">{this.props.category}</h2>
+			<p>{this.props.text}</p>
 		</div>
 	);
   }
 }
 
 export default withStyles(Exercise, s);
+

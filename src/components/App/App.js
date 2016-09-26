@@ -14,6 +14,12 @@ import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 import ExerciseContainer from '../ExerciseContainer';
+const data = [
+  {id: 1, category: "Power", text: "this is a power exercise"},
+  {id: 2, category: "Strength", text: "this is a strength exercise"}
+];
+
+
 
 class App extends Component {
 
@@ -58,7 +64,7 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        <ExerciseContainer />
+        <ExerciseContainer data={data} />
         {this.props.children}
         <Feedback />
         <Footer />
