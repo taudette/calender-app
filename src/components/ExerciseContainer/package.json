@@ -1,0 +1,6 @@
+{
+  "name": "ExerciseContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ExerciseContainer.js"
+}
