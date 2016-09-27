@@ -1975,7 +1975,7 @@ module.exports =
   'use strict';
   
   Object.defineProperty(exports, "__esModule", {
-  	value: true
+    value: true
   });
   
   var _getPrototypeOf = __webpack_require__(5);
@@ -2013,34 +2013,42 @@ module.exports =
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   var Exercise = function (_Component) {
-  	(0, _inherits3.default)(Exercise, _Component);
+    (0, _inherits3.default)(Exercise, _Component);
   
-  	function Exercise() {
-  		(0, _classCallCheck3.default)(this, Exercise);
-  		return (0, _possibleConstructorReturn3.default)(this, (Exercise.__proto__ || (0, _getPrototypeOf2.default)(Exercise)).apply(this, arguments));
-  	}
+    function Exercise() {
+      (0, _classCallCheck3.default)(this, Exercise);
+      return (0, _possibleConstructorReturn3.default)(this, (Exercise.__proto__ || (0, _getPrototypeOf2.default)(Exercise)).apply(this, arguments));
+    }
   
-  	(0, _createClass3.default)(Exercise, [{
-  		key: 'render',
-  		value: function render() {
-  			return _react2.default.createElement(
-  				'div',
-  				{ className: 'exercise' },
-  				_react2.default.createElement(
-  					'h2',
-  					{ className: 'category' },
-  					this.props.category
-  				),
-  				_react2.default.createElement(
-  					'p',
-  					null,
-  					this.props.text
-  				)
-  			);
-  		}
-  	}]);
-  	return Exercise;
+    (0, _createClass3.default)(Exercise, [{
+      key: 'render',
+      value: function render() {
+        if (!this.props) {
+          return null;
+        }
+        return _react2.default.createElement(
+          'div',
+          { className: 'exercise' },
+          _react2.default.createElement(
+            'h2',
+            { className: 'category' },
+            this.props.category
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            this.props.text
+          )
+        );
+      }
+    }]);
+    return Exercise;
   }(_react.Component);
+  
+  Exercise.propTypes = {
+    category: _react.PropTypes.string.isRequired,
+    text: _react.PropTypes.string.isRequired
+  };
   
   exports.default = (0, _withStyles2.default)(Exercise, _Exercise2.default);
 
@@ -2051,7 +2059,7 @@ module.exports =
   'use strict';
   
   Object.defineProperty(exports, "__esModule", {
-  	value: true
+    value: true
   });
   
   var _getPrototypeOf = __webpack_require__(5);
@@ -2097,31 +2105,33 @@ module.exports =
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   var ExerciseContainer = function (_Component) {
-  	(0, _inherits3.default)(ExerciseContainer, _Component);
+    (0, _inherits3.default)(ExerciseContainer, _Component);
   
-  	function ExerciseContainer() {
-  		(0, _classCallCheck3.default)(this, ExerciseContainer);
-  		return (0, _possibleConstructorReturn3.default)(this, (ExerciseContainer.__proto__ || (0, _getPrototypeOf2.default)(ExerciseContainer)).apply(this, arguments));
-  	}
+    function ExerciseContainer() {
+      (0, _classCallCheck3.default)(this, ExerciseContainer);
+      return (0, _possibleConstructorReturn3.default)(this, (ExerciseContainer.__proto__ || (0, _getPrototypeOf2.default)(ExerciseContainer)).apply(this, arguments));
+    }
   
-  	(0, _createClass3.default)(ExerciseContainer, [{
-  		key: 'render',
-  		value: function render() {
-  			console.log(this.props.data);
-  			return _react2.default.createElement(
-  				'div',
-  				{ className: _Exercise2.default.container },
-  				_react2.default.createElement(
-  					'h1',
-  					null,
-  					'Exercises'
-  				),
-  				_react2.default.createElement(_ExerciseList2.default, { data: this.props.data }),
-  				_react2.default.createElement(_ExerciseForm2.default, null)
-  			);
-  		}
-  	}]);
-  	return ExerciseContainer;
+    (0, _createClass3.default)(ExerciseContainer, [{
+      key: 'render',
+      value: function render() {
+        if (!this.props.data) {
+          return null;
+        }
+        return _react2.default.createElement(
+          'div',
+          { className: _Exercise2.default.container },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Exercises'
+          ),
+          _react2.default.createElement(_ExerciseList2.default, { data: this.props.data }),
+          _react2.default.createElement(_ExerciseForm2.default, null)
+        );
+      }
+    }]);
+    return ExerciseContainer;
   }(_react.Component); /**
                         * React Starter Kit (https://www.reactstarterkit.com/)
                         *
@@ -2130,6 +2140,8 @@ module.exports =
                         * This source code is licensed under the MIT license found in the
                         * LICENSE.txt file in the root directory of this source tree.
                         */
+  
+  ExerciseContainer.propTypes = { data: _react.PropTypes.array.isRequired };
   
   exports.default = (0, _withStyles2.default)(ExerciseContainer, _Exercise2.default);
 
@@ -2140,7 +2152,7 @@ module.exports =
   'use strict';
   
   Object.defineProperty(exports, "__esModule", {
-  	value: true
+    value: true
   });
   
   var _react = __webpack_require__(1);
@@ -2158,11 +2170,11 @@ module.exports =
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   function ExerciseForm() {
-  	return _react2.default.createElement(
-  		'div',
-  		null,
-  		'I am an exercise exercise form'
-  	);
+    return _react2.default.createElement(
+      'div',
+      null,
+      'I am an exercise exercise form'
+    );
   }
   
   exports.default = (0, _withStyles2.default)(ExerciseForm, _Exercise2.default);
@@ -2226,6 +2238,9 @@ module.exports =
     (0, _createClass3.default)(ExerciseList, [{
       key: 'render',
       value: function render() {
+        if (!this.props) {
+          return null;
+        }
   
         var exerciseNodes = this.props.data.map(function (exercise) {
           return _react2.default.createElement(
@@ -2245,7 +2260,13 @@ module.exports =
     return ExerciseList;
   }(_react.Component);
   
-  ;
+  ExerciseList.propTypes = {
+    data: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+      category: _react.PropTypes.string.isRequired,
+      id: _react.PropTypes.string.isRequired,
+      text: _react.PropTypes.string.isRequired
+    })).isRequired
+  };
   
   exports.default = (0, _withStyles2.default)(ExerciseList, _Exercise2.default);
 
